@@ -1,0 +1,120 @@
+Execution time: 2026-01-19 18:46:18
+prompt: Mr. Sanchez found out that 40% of his Grade 5  students got a final grade below B. How many of his students got a final grade of B and above if he has 60 students in Grade 5? Since 40% of his students got below B, 100% - 40% = 60% of Mr. Sanchez's students got B and above. Thus, 60 x 60/100 = <<60*60/100=36>>36 students got B and above in their final grade. Final answer:
+---------- tokenizer ----------
+idx:0 input_id:24891 decoded_text: Mr
+idx:1 input_id:13 decoded_text: .
+idx:2 input_id:101330 decoded_text:  Sanchez
+idx:3 input_id:2491 decoded_text:  found
+idx:4 input_id:842 decoded_text:  out
+idx:5 input_id:484 decoded_text:  that
+idx:6 input_id:220 decoded_text:  
+idx:7 input_id:1723 decoded_text: 40
+idx:8 input_id:4 decoded_text: %
+idx:9 input_id:328 decoded_text:  of
+idx:10 input_id:1232 decoded_text:  his
+idx:11 input_id:36379 decoded_text:  Grade
+idx:12 input_id:220 decoded_text:  
+idx:13 input_id:20 decoded_text: 5
+idx:14 input_id:220 decoded_text:  
+idx:15 input_id:4501 decoded_text:  students
+idx:16 input_id:3508 decoded_text:  got
+idx:17 input_id:261 decoded_text:  a
+idx:18 input_id:1721 decoded_text:  final
+idx:19 input_id:15349 decoded_text:  grade
+idx:20 input_id:4895 decoded_text:  below
+idx:21 input_id:418 decoded_text:  B
+idx:22 input_id:13 decoded_text: .
+idx:23 input_id:3253 decoded_text:  How
+idx:24 input_id:1991 decoded_text:  many
+idx:25 input_id:328 decoded_text:  of
+idx:26 input_id:1232 decoded_text:  his
+idx:27 input_id:4501 decoded_text:  students
+idx:28 input_id:3508 decoded_text:  got
+idx:29 input_id:261 decoded_text:  a
+idx:30 input_id:1721 decoded_text:  final
+idx:31 input_id:15349 decoded_text:  grade
+idx:32 input_id:328 decoded_text:  of
+idx:33 input_id:418 decoded_text:  B
+idx:34 input_id:326 decoded_text:  and
+idx:35 input_id:5151 decoded_text:  above
+idx:36 input_id:538 decoded_text:  if
+idx:37 input_id:501 decoded_text:  he
+idx:38 input_id:853 decoded_text:  has
+idx:39 input_id:220 decoded_text:  
+idx:40 input_id:1910 decoded_text: 60
+idx:41 input_id:4501 decoded_text:  students
+idx:42 input_id:306 decoded_text:  in
+idx:43 input_id:36379 decoded_text:  Grade
+idx:44 input_id:220 decoded_text:  
+idx:45 input_id:20 decoded_text: 5
+idx:46 input_id:30 decoded_text: ?
+idx:47 input_id:12265 decoded_text:  Since
+idx:48 input_id:220 decoded_text:  
+idx:49 input_id:1723 decoded_text: 40
+idx:50 input_id:4 decoded_text: %
+idx:51 input_id:328 decoded_text:  of
+idx:52 input_id:1232 decoded_text:  his
+idx:53 input_id:4501 decoded_text:  students
+idx:54 input_id:3508 decoded_text:  got
+idx:55 input_id:4895 decoded_text:  below
+idx:56 input_id:418 decoded_text:  B
+idx:57 input_id:11 decoded_text: ,
+idx:58 input_id:220 decoded_text:  
+idx:59 input_id:1353 decoded_text: 100
+idx:60 input_id:4 decoded_text: %
+idx:61 input_id:533 decoded_text:  -
+idx:62 input_id:220 decoded_text:  
+idx:63 input_id:1723 decoded_text: 40
+idx:64 input_id:4 decoded_text: %
+idx:65 input_id:314 decoded_text:  =
+idx:66 input_id:220 decoded_text:  
+idx:67 input_id:1910 decoded_text: 60
+idx:68 input_id:4 decoded_text: %
+idx:69 input_id:328 decoded_text:  of
+idx:70 input_id:9655 decoded_text:  Mr
+idx:71 input_id:13 decoded_text: .
+idx:72 input_id:101330 decoded_text:  Sanchez
+idx:73 input_id:885 decoded_text: 's
+idx:74 input_id:4501 decoded_text:  students
+idx:75 input_id:3508 decoded_text:  got
+idx:76 input_id:418 decoded_text:  B
+idx:77 input_id:326 decoded_text:  and
+idx:78 input_id:5151 decoded_text:  above
+idx:79 input_id:13 decoded_text: .
+idx:80 input_id:23586 decoded_text:  Thus
+idx:81 input_id:11 decoded_text: ,
+idx:82 input_id:220 decoded_text:  
+idx:83 input_id:1910 decoded_text: 60
+idx:84 input_id:1215 decoded_text:  x
+idx:85 input_id:220 decoded_text:  
+idx:86 input_id:1910 decoded_text: 60
+idx:87 input_id:14 decoded_text: /
+idx:88 input_id:1353 decoded_text: 100
+idx:89 input_id:314 decoded_text:  =
+idx:90 input_id:2256 decoded_text:  <<
+idx:91 input_id:1910 decoded_text: 60
+idx:92 input_id:9 decoded_text: *
+idx:93 input_id:1910 decoded_text: 60
+idx:94 input_id:14 decoded_text: /
+idx:95 input_id:1353 decoded_text: 100
+idx:96 input_id:28 decoded_text: =
+idx:97 input_id:2636 decoded_text: 36
+idx:98 input_id:3920 decoded_text: >>
+idx:99 input_id:2636 decoded_text: 36
+idx:100 input_id:4501 decoded_text:  students
+idx:101 input_id:3508 decoded_text:  got
+idx:102 input_id:418 decoded_text:  B
+idx:103 input_id:326 decoded_text:  and
+idx:104 input_id:5151 decoded_text:  above
+idx:105 input_id:306 decoded_text:  in
+idx:106 input_id:1043 decoded_text:  their
+idx:107 input_id:1721 decoded_text:  final
+idx:108 input_id:15349 decoded_text:  grade
+idx:109 input_id:13 decoded_text: .
+idx:110 input_id:12625 decoded_text:  Final
+idx:111 input_id:6052 decoded_text:  answer
+idx:112 input_id:25 decoded_text: :
+---------- predict ----------
+pred_label:220
+decoded_pred_text (only for generation task):  
+==================================================

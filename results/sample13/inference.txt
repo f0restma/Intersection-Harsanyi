@@ -1,0 +1,181 @@
+Execution time: 2026-01-19 18:41:14
+prompt: Ann, Bill, Cate, and Dale each buy personal pan pizzas cut into 4 pieces. If Bill and Dale eat 50% of their pizzas and Ann and Cate eat 75% of the pizzas, how many pizza pieces are left uneaten? In total, there are 4 x 4 = <<4*4=16>>16 pizza pieces. Bill and Dale eat 2 x 4 x 50% = <<2*4*50*.01=4>>4 pieces. Ann and Cate eat 2 x 4 x 75% = <<2*4*75*.01=6>>6 pieces. The four of them eat 4 + 6 = <<4+6=10>>10 pieces. There are 16 - 10 = <<16-10=6>>6 pizza pieces uneaten. Final answer:
+---------- tokenizer ----------
+idx:0 input_id:27411 decoded_text: Ann
+idx:1 input_id:11 decoded_text: ,
+idx:2 input_id:13971 decoded_text:  Bill
+idx:3 input_id:11 decoded_text: ,
+idx:4 input_id:150284 decoded_text:  Cate
+idx:5 input_id:11 decoded_text: ,
+idx:6 input_id:326 decoded_text:  and
+idx:7 input_id:78003 decoded_text:  Dale
+idx:8 input_id:2454 decoded_text:  each
+idx:9 input_id:3877 decoded_text:  buy
+idx:10 input_id:3832 decoded_text:  personal
+idx:11 input_id:6389 decoded_text:  pan
+idx:12 input_id:113504 decoded_text:  pizzas
+idx:13 input_id:6092 decoded_text:  cut
+idx:14 input_id:1511 decoded_text:  into
+idx:15 input_id:220 decoded_text:  
+idx:16 input_id:19 decoded_text: 4
+idx:17 input_id:12762 decoded_text:  pieces
+idx:18 input_id:13 decoded_text: .
+idx:19 input_id:1843 decoded_text:  If
+idx:20 input_id:13971 decoded_text:  Bill
+idx:21 input_id:326 decoded_text:  and
+idx:22 input_id:78003 decoded_text:  Dale
+idx:23 input_id:11237 decoded_text:  eat
+idx:24 input_id:220 decoded_text:  
+idx:25 input_id:1434 decoded_text: 50
+idx:26 input_id:4 decoded_text: %
+idx:27 input_id:328 decoded_text:  of
+idx:28 input_id:1043 decoded_text:  their
+idx:29 input_id:113504 decoded_text:  pizzas
+idx:30 input_id:326 decoded_text:  and
+idx:31 input_id:12827 decoded_text:  Ann
+idx:32 input_id:326 decoded_text:  and
+idx:33 input_id:150284 decoded_text:  Cate
+idx:34 input_id:11237 decoded_text:  eat
+idx:35 input_id:220 decoded_text:  
+idx:36 input_id:3384 decoded_text: 75
+idx:37 input_id:4 decoded_text: %
+idx:38 input_id:328 decoded_text:  of
+idx:39 input_id:290 decoded_text:  the
+idx:40 input_id:113504 decoded_text:  pizzas
+idx:41 input_id:11 decoded_text: ,
+idx:42 input_id:1495 decoded_text:  how
+idx:43 input_id:1991 decoded_text:  many
+idx:44 input_id:27941 decoded_text:  pizza
+idx:45 input_id:12762 decoded_text:  pieces
+idx:46 input_id:553 decoded_text:  are
+idx:47 input_id:3561 decoded_text:  left
+idx:48 input_id:2463 decoded_text:  une
+idx:49 input_id:5819 decoded_text: aten
+idx:50 input_id:30 decoded_text: ?
+idx:51 input_id:730 decoded_text:  In
+idx:52 input_id:3609 decoded_text:  total
+idx:53 input_id:11 decoded_text: ,
+idx:54 input_id:1354 decoded_text:  there
+idx:55 input_id:553 decoded_text:  are
+idx:56 input_id:220 decoded_text:  
+idx:57 input_id:19 decoded_text: 4
+idx:58 input_id:1215 decoded_text:  x
+idx:59 input_id:220 decoded_text:  
+idx:60 input_id:19 decoded_text: 4
+idx:61 input_id:314 decoded_text:  =
+idx:62 input_id:2256 decoded_text:  <<
+idx:63 input_id:19 decoded_text: 4
+idx:64 input_id:9 decoded_text: *
+idx:65 input_id:19 decoded_text: 4
+idx:66 input_id:28 decoded_text: =
+idx:67 input_id:1125 decoded_text: 16
+idx:68 input_id:3920 decoded_text: >>
+idx:69 input_id:1125 decoded_text: 16
+idx:70 input_id:27941 decoded_text:  pizza
+idx:71 input_id:12762 decoded_text:  pieces
+idx:72 input_id:13 decoded_text: .
+idx:73 input_id:13971 decoded_text:  Bill
+idx:74 input_id:326 decoded_text:  and
+idx:75 input_id:78003 decoded_text:  Dale
+idx:76 input_id:11237 decoded_text:  eat
+idx:77 input_id:220 decoded_text:  
+idx:78 input_id:17 decoded_text: 2
+idx:79 input_id:1215 decoded_text:  x
+idx:80 input_id:220 decoded_text:  
+idx:81 input_id:19 decoded_text: 4
+idx:82 input_id:1215 decoded_text:  x
+idx:83 input_id:220 decoded_text:  
+idx:84 input_id:1434 decoded_text: 50
+idx:85 input_id:4 decoded_text: %
+idx:86 input_id:314 decoded_text:  =
+idx:87 input_id:2256 decoded_text:  <<
+idx:88 input_id:17 decoded_text: 2
+idx:89 input_id:9 decoded_text: *
+idx:90 input_id:19 decoded_text: 4
+idx:91 input_id:9 decoded_text: *
+idx:92 input_id:1434 decoded_text: 50
+idx:93 input_id:40856 decoded_text: *.
+idx:94 input_id:2290 decoded_text: 01
+idx:95 input_id:28 decoded_text: =
+idx:96 input_id:19 decoded_text: 4
+idx:97 input_id:3920 decoded_text: >>
+idx:98 input_id:19 decoded_text: 4
+idx:99 input_id:12762 decoded_text:  pieces
+idx:100 input_id:13 decoded_text: .
+idx:101 input_id:12827 decoded_text:  Ann
+idx:102 input_id:326 decoded_text:  and
+idx:103 input_id:150284 decoded_text:  Cate
+idx:104 input_id:11237 decoded_text:  eat
+idx:105 input_id:220 decoded_text:  
+idx:106 input_id:17 decoded_text: 2
+idx:107 input_id:1215 decoded_text:  x
+idx:108 input_id:220 decoded_text:  
+idx:109 input_id:19 decoded_text: 4
+idx:110 input_id:1215 decoded_text:  x
+idx:111 input_id:220 decoded_text:  
+idx:112 input_id:3384 decoded_text: 75
+idx:113 input_id:4 decoded_text: %
+idx:114 input_id:314 decoded_text:  =
+idx:115 input_id:2256 decoded_text:  <<
+idx:116 input_id:17 decoded_text: 2
+idx:117 input_id:9 decoded_text: *
+idx:118 input_id:19 decoded_text: 4
+idx:119 input_id:9 decoded_text: *
+idx:120 input_id:3384 decoded_text: 75
+idx:121 input_id:40856 decoded_text: *.
+idx:122 input_id:2290 decoded_text: 01
+idx:123 input_id:28 decoded_text: =
+idx:124 input_id:21 decoded_text: 6
+idx:125 input_id:3920 decoded_text: >>
+idx:126 input_id:21 decoded_text: 6
+idx:127 input_id:12762 decoded_text:  pieces
+idx:128 input_id:13 decoded_text: .
+idx:129 input_id:623 decoded_text:  The
+idx:130 input_id:4242 decoded_text:  four
+idx:131 input_id:328 decoded_text:  of
+idx:132 input_id:1373 decoded_text:  them
+idx:133 input_id:11237 decoded_text:  eat
+idx:134 input_id:220 decoded_text:  
+idx:135 input_id:19 decoded_text: 4
+idx:136 input_id:659 decoded_text:  +
+idx:137 input_id:220 decoded_text:  
+idx:138 input_id:21 decoded_text: 6
+idx:139 input_id:314 decoded_text:  =
+idx:140 input_id:2256 decoded_text:  <<
+idx:141 input_id:19 decoded_text: 4
+idx:142 input_id:10 decoded_text: +
+idx:143 input_id:21 decoded_text: 6
+idx:144 input_id:28 decoded_text: =
+idx:145 input_id:702 decoded_text: 10
+idx:146 input_id:3920 decoded_text: >>
+idx:147 input_id:702 decoded_text: 10
+idx:148 input_id:12762 decoded_text:  pieces
+idx:149 input_id:13 decoded_text: .
+idx:150 input_id:3274 decoded_text:  There
+idx:151 input_id:553 decoded_text:  are
+idx:152 input_id:220 decoded_text:  
+idx:153 input_id:1125 decoded_text: 16
+idx:154 input_id:533 decoded_text:  -
+idx:155 input_id:220 decoded_text:  
+idx:156 input_id:702 decoded_text: 10
+idx:157 input_id:314 decoded_text:  =
+idx:158 input_id:2256 decoded_text:  <<
+idx:159 input_id:1125 decoded_text: 16
+idx:160 input_id:12 decoded_text: -
+idx:161 input_id:702 decoded_text: 10
+idx:162 input_id:28 decoded_text: =
+idx:163 input_id:21 decoded_text: 6
+idx:164 input_id:3920 decoded_text: >>
+idx:165 input_id:21 decoded_text: 6
+idx:166 input_id:27941 decoded_text:  pizza
+idx:167 input_id:12762 decoded_text:  pieces
+idx:168 input_id:2463 decoded_text:  une
+idx:169 input_id:5819 decoded_text: aten
+idx:170 input_id:13 decoded_text: .
+idx:171 input_id:12625 decoded_text:  Final
+idx:172 input_id:6052 decoded_text:  answer
+idx:173 input_id:25 decoded_text: :
+---------- predict ----------
+pred_label:220
+decoded_pred_text (only for generation task):  
+==================================================

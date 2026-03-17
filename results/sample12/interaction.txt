@@ -1,0 +1,32 @@
+---------- Players ----------
+Player 0: Jack is stranded on a desert island.
+Player 1:  He wants some salt to season his fish.
+Player 2:  He collects 2 liters of seawater in an old bucket.
+Player 3:  If the water is 20% salt, how many ml of salt will Jack get when all the water evaporates?
+Player 4:  First find how many liters of the seawater are salt: 2 liters * 20% = <<2*20*.01=.4>>.4 liters Then multiply that amount by 1000 ml/liter to find the number of ml of salt Jack gets: .4 liters * 1000 ml/liter = <<.4*1000=400>>400 ml
+Player 5:  Final answer:
+---------- AND Interactions (Pairwise Only) ----------
+I(5): 7.140625	 ([ Final answer:])
+I(2): 5.578125	 ([ He collects 2 liters of seawater in an old bucket.])
+I(2,5): 5.578125	 ([ He collects 2 liters of seawater in an old bucket.][ Final answer:])
+I(0,2): 5.15625	 ([Jack is stranded on a desert island.][ He collects 2 liters of seawater in an old bucket.])
+I(3,5): 4.359375	 ([ If the water is 20% salt, how many ml of salt will Jack get when all the water evaporates?][ Final answer:])
+I(3): 4.359375	 ([ If the water is 20% salt, how many ml of salt will Jack get when all the water evaporates?])
+I(0,4): -3.30859375	 ([Jack is stranded on a desert island.][ First find how many liters of the seawater are salt: 2 liters * 20% = <<2*20*.01=.4>>.4 liters Then multiply that amount by 1000 ml/liter to find the number of ml of salt Jack gets: .4 liters * 1000 ml/liter = <<.4*1000=400>>400 ml])
+I(2,3): 2.796875	 ([ He collects 2 liters of seawater in an old bucket.][ If the water is 20% salt, how many ml of salt will Jack get when all the water evaporates?])
+I(3,4): -2.328125	 ([ If the water is 20% salt, how many ml of salt will Jack get when all the water evaporates?][ First find how many liters of the seawater are salt: 2 liters * 20% = <<2*20*.01=.4>>.4 liters Then multiply that amount by 1000 ml/liter to find the number of ml of salt Jack gets: .4 liters * 1000 ml/liter = <<.4*1000=400>>400 ml])
+I(0,5): -2.015625	 ([Jack is stranded on a desert island.][ Final answer:])
+I(0): -2.015625	 ([Jack is stranded on a desert island.])
+I(1,2): 1.703125	 ([ He wants some salt to season his fish.][ He collects 2 liters of seawater in an old bucket.])
+I(1,3): -1.265625	 ([ He wants some salt to season his fish.][ If the water is 20% salt, how many ml of salt will Jack get when all the water evaporates?])
+I(0,1): 1.171875	 ([Jack is stranded on a desert island.][ He wants some salt to season his fish.])
+I(1): 0.890625	 ([ He wants some salt to season his fish.])
+I(1,5): 0.890625	 ([ He wants some salt to season his fish.][ Final answer:])
+I(1,4): -0.832763671875	 ([ He wants some salt to season his fish.][ First find how many liters of the seawater are salt: 2 liters * 20% = <<2*20*.01=.4>>.4 liters Then multiply that amount by 1000 ml/liter to find the number of ml of salt Jack gets: .4 liters * 1000 ml/liter = <<.4*1000=400>>400 ml])
+I(2,4): -0.828125	 ([ He collects 2 liters of seawater in an old bucket.][ First find how many liters of the seawater are salt: 2 liters * 20% = <<2*20*.01=.4>>.4 liters Then multiply that amount by 1000 ml/liter to find the number of ml of salt Jack gets: .4 liters * 1000 ml/liter = <<.4*1000=400>>400 ml])
+I(0,3): -0.62890625	 ([Jack is stranded on a desert island.][ If the water is 20% salt, how many ml of salt will Jack get when all the water evaporates?])
+I(4): 0.453125	 ([ First find how many liters of the seawater are salt: 2 liters * 20% = <<2*20*.01=.4>>.4 liters Then multiply that amount by 1000 ml/liter to find the number of ml of salt Jack gets: .4 liters * 1000 ml/liter = <<.4*1000=400>>400 ml])
+I(4,5): 0.453125	 ([ First find how many liters of the seawater are salt: 2 liters * 20% = <<2*20*.01=.4>>.4 liters Then multiply that amount by 1000 ml/liter to find the number of ml of salt Jack gets: .4 liters * 1000 ml/liter = <<.4*1000=400>>400 ml][ Final answer:])
+I(): 0.0	 ([])
+Sum: 27.307861328125
+==================================================
