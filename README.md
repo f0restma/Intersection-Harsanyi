@@ -15,16 +15,13 @@ We further apply this framework to study whether LLMs follow structured reasonin
 - Support for **Shapley value** and **Shapley interaction index**  
 - Efficient computation of model outputs over **all feature subsets**  
 - Construction of **interaction graphs** for interpretability  
-- Extension to **generative models (LLMs)** using sequence-level rewards  
-- Optimization-based feature selection inspired by **Meaningful Perturbation**  
-
 ---
 
 ## Method
 
 ### 1. Subset Evaluation
 
-Given an input with \( n \) features (e.g., tokens), we evaluate the model on all subsets:
+Given an input with  n (n=|S|)features (e.g., token, words or maybe sentences), we evaluate the model on all subsets:
 
 $$
 v(S) = \sum_{L \subseteq S\}v(L)
