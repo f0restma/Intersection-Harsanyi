@@ -1,4 +1,3 @@
-<img width="3877" height="531" alt="image" src="https://github.com/user-attachments/assets/cacad7e5-3f2a-4533-bb91-bc3f30ac235e" /># Interaction-Based Interpretability for LLM Reasoning
 
 ## Overview
 
@@ -53,8 +52,9 @@ $I(a,b) = v(N) - v(N/a) + v(N/b) + v(a,b)$ (I implement this in and_or_harsanyi_
 
 We compute higher-order feature interactions using:
 
-- A matrix of storage coefficients $(-1)^{|S|-|L|}$ （Implemented in and_or_harsanyi_utils.py）
+- reward2Iandmat:A matrix of storage coefficients $(-1)^{|S|-|L|}$ （Implemented in and_or_harsanyi_utils.py）
 - Reward functions (For classification models, the reward is the logits of the correct category after applying softmax.) (I implement this in and_or_harsanyi.py)
+- EP: a index defined as $EP(S) = |v(s)-v(\phi)|/|v(N)-v(\phi)|$
 
 These interactions capture **non-linear dependencies** between features beyond individual contributions.
 
@@ -71,19 +71,6 @@ We construct an **Interaction Decision Graph**:
 This allows us to interpret model reasoning structure.
 
 ---
-
-### 4. Extension to LLMs
-
-For generative models, we define a **reward function** :
-
-$$
-R(S) = softmax(logits(answer_token))
-$$
-
-
-
----
-
 
 ## Experiments
 
