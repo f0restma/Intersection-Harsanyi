@@ -79,7 +79,8 @@ We apply the framework to:
 - **Dataset**: GSM8K (math reasoning)
 - **Model type**: generative LLMs (gpt-oss)
   
-Experimental process:
+### Experimental process:
+
 -使用用gpt-oss-20b进行生成式任务，不再为gsm8k的prompt添加选项。
 
 -注意到生成式任务的答案token不一定在固定位置出现，所以我们采取遍历生成的所有token的正确答案的logits，取最大值并log(p/1-p)后作为全集的reward, get_reward函数要重新写。
