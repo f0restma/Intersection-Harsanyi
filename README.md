@@ -78,19 +78,35 @@ We apply the framework to:
   
 ### Experimental process:
 
--使用用gpt-oss-20b进行生成式任务，不再为gsm8k的prompt添加选项。
+- 使用用gpt-oss-20b进行生成式任务，不再为gsm8k的prompt添加选项。
 
--注意到生成式任务的答案token不一定在固定位置出现，所以我们采取遍历生成的所有token的正确答案的logits，取最大值并log(p/1-p)后作为全集的reward, get_reward函数要重新写。
+- 注意到生成式任务的答案token不一定在固定位置出现，所以我们采取遍历生成的所有token的正确答案的logits，取最大值并log(p/1-p)后作为全集的reward, get_reward函数要重新写。
 
--需要修改生成mask_batch的逻辑，改为生成式任务后，每个mask_batch都需要生成完整文本（要遍历token获得正确答案最大的logits），不能只调用一次forward函数
+- 需要修改生成mask_batch的逻辑，改为生成式任务后，每个mask_batch都需要生成完整文本（要遍历token获得正确答案最大的logits），不能只调用一次forward函数
 
--label文件改为正确答案tokenizer后的token_id,作为之后取logits的索引
+- label文件改为正确答案tokenizer后的token_id,作为之后取logits的索引
 
--generate()函数只接受input_ids, 但我们希望在embedding层进行mask，改为手写采forward loop的方式，堆叠每步生成的logits，并取最大值
+- generate()函数只接受input_ids, 但我们希望在embedding层进行mask，改为手写采forward loop的方式，堆叠每步生成的logits，并取最大值
 
--对于较复杂的题目（需要结合多个信息才能做出正确解答），聚类的结果显示模型往往把含有最终答案和“Final answer”放在一起，这说明模型可能没有进行推理过程，而是“偷看”答案才回答正确，并认为直接给出答案的句子很重要
+- 把计算交互的baseline改为v(N)后，感觉整体交互变强，比如原来baseline为v(\phi)时某些涵盖重要条件的交互组合的交互值接近0或者为负数，但是baseline为v(N)时，这些交互值大幅提高（但是也会出现不重要信息交互值过高的情况）
+
+- 改变baseline后，交互最强的组合不再是“最后一步的推理+ Final answer:”，而是题目中的关键信息作为交互最强的组合，感觉使用$I(a,b) = v(N) - v(N/a) + v(N/b) + v(a,b)$在gsm8k数据集上比$I(a,b) = v(a,b) - v(a) - v(b) + v(\phi)$可能更优
+ 
+### Thoughts on Classification Tasks
+
+- 如果要进行判别式任务，应该选择在多项选择题数据集上微调过的模型,（现在看来deberta即使在qsac上微调过也会受无关选项影响），模型会觉得选项也是文本特征的一部分导致误判（选项也参与了attention分布）
+  
+- 在qsac数据集的实验结果(路径：results/qsac)，sample1的intersection结果I(2,9)值特别高，而含fact1和问题的交互值很低，这是不合理的，没有fact1无法推论出“病毒会导致不正常的细胞生长”，没有问题模型为什么笃定选G？合理怀疑模型只是根据fact2选择G，(微调是过拟合的，只是保证高准确率),模型并没有进行思维链行为。
+
+
+
 
 ### Goals
 
 - Analyze whether models follow structured reasoning ("Question->fact1 ->fact 2->answer”)
+  
+### Results
+
+- You can check visual_communities and intersection values in results document
+
   
