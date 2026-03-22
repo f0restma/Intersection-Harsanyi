@@ -51,7 +51,7 @@ We compute higher-order feature interactions using:
 
 - reward2Iandmat:A matrix of storage coefficients $(-1)^{|S|-|L|}$ （Implemented in and_or_harsanyi_utils.py）
 - Reward functions (For classification models, the reward is the logits of the correct category after applying softmax.) (I implement this in and_or_harsanyi.py)
-- EP: a index defined as $EP(S) = |v(s)-v(\phi)|/|v(N)-v(\phi)|$
+- EP: a metric defined as $EP(S) = |v(s)-v(\phi)|/|v(N)-v(\phi)|$
 
 These interactions capture **non-linear dependencies** between features beyond individual contributions.
 
@@ -90,7 +90,7 @@ We apply the framework to:
 
 - 把计算交互的baseline改为v(N)后，感觉整体交互变强，比如原来baseline为v(\phi)时某些涵盖重要条件的交互组合的交互值接近0或者为负数，但是baseline为v(N)时，这些交互值大幅提高（但是也会出现不重要信息交互值过高的情况）
 
-- 改变baseline后，交互最强的组合不再是“最后一步的推理+ Final answer:”，而是题目中的关键信息作为交互最强的组合，感觉使用$I(a,b) = v(N) - v(N/a) + v(N/b) + v(a,b)$在gsm8k数据集上比$I(a,b) = v(a,b) - v(a) - v(b) + v(\phi)$可能更优
+- 改变baseline后，交互最强的组合不再是“最后一步的推理+ Final answer:”，而是题目中的关键信息作为交互最强的组合，使用 $I(a,b) = v(N) - v(N/a) + v(N/b) + v(a,b)$ 在gsm8k数据集上比 $I(a,b) = v(a,b) - v(a) - v(b) + v(\phi)$ 可能更优
  
 ### Thoughts on Classification Tasks
 
