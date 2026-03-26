@@ -41,7 +41,7 @@ $I(a,b) = v(a,b) - v(a) - v(b) + v(\phi)$
 
 Change the baseline from the from $\phi$ to N, we get:
 
-$I(a,b) = v(N) - v(N/a) + v(N/b) + v(a,b)$ (I implement this in and_or_harsanyi_utils.py)
+$I(a,b) = v(N) - v(N/a) - v(N/b) + v(N/a,b)$ (I implement this in and_or_harsanyi_utils.py)
 
 ---
 
